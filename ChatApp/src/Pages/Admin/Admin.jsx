@@ -10,7 +10,7 @@ export default function Admin() {
         <div className="flex flex-row justify-between p-2 ">
           <Link
             className="border-2 border-black rounded bg-[#49ACF3] px-2 text-white"
-            to={"/chats"}
+            to={"/demoapp/chats"}
           >
             Chats
           </Link>

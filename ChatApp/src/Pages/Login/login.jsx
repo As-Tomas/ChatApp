@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate   } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function SignIn() {
   const [username, setUserName] = useState("");
@@ -9,17 +9,15 @@ export default function SignIn() {
 
   const handleLogin = () => {
     const demoUsername = "demo";
-    const demoPassword = "password";    
+    const demoPassword = "password";
 
-    navigate("/chats", { state: { username, password } });
-    if (username === demoUsername && password === demoPassword) {
-      
-      setLoggedIn(true);
-      navigate("/chats", { state: { username, password } });
-
-    } else {      
-      console.log("Invalid username or password");
-    }
+    navigate("/demoapp/chats", { state: { username, password } });
+    // if (username === demoUsername && password === demoPassword) {
+    //   setLoggedIn(true);
+    //   navigate("/demoapp/chats", { state: { username, password } });
+    // } else {
+    //   console.log("Invalid username or password");
+    // }
   };
 
   return (
@@ -41,7 +39,6 @@ export default function SignIn() {
 
         <button
           className="border-2 border-black rounded bg-[#49ACF3] w-2/3 px-2 mx-auto text-white"
-         
           onClick={handleLogin}
         >
           Login
@@ -49,7 +46,7 @@ export default function SignIn() {
 
         <Link
           className="border-2 border-black rounded bg-[#49ACF3] w-2/3 px-2 mx-auto text-white"
-          to={"/chats"}
+          to={"/demoapp/chats"}
         >
           Create User
         </Link>
@@ -57,5 +54,3 @@ export default function SignIn() {
     </div>
   );
 }
-
-
