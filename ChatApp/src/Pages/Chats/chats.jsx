@@ -10,13 +10,13 @@ export default function chats() {
         <div className="flex flex-row justify-between p-2 ">
           <Link
             className="border-2 border-black rounded bg-[#49ACF3] px-2 text-white"
-            to={"/demoapp/admin"}
+            to={"/ChatApp/admin"}
           >
             Admin
           </Link>
           <Link
             className="border-2 border-black rounded bg-[#49ACF3] px-2 text-white"
-            to={"/demoapp/createchat"}
+            to={"/ChatApp/createchat"}
           >
             Add Room
           </Link>

@@ -11,11 +11,11 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/demoapp/" element={<Login />} />
-        <Route path="/demoapp/chats" element={<Chats />} />
-        <Route path="/demoapp/createchat" element={<CreateChat />} />
-        <Route path="/demoapp/admin" element={<Admin />} />
-        <Route path="/demoapp/chat" element={<Chat />} />
+        <Route path="/ChatApp/" element={<Login />} />
+        <Route path="/ChatApp/chats" element={<Chats />} />
+        <Route path="/ChatApp/createchat" element={<CreateChat />} />
+        <Route path="/ChatApp/admin" element={<Admin />} />
+        <Route path="/ChatApp/chat" element={<Chat />} />
       </Routes>
     </>
   );

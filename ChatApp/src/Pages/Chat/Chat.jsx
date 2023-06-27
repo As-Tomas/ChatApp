@@ -11,7 +11,7 @@ export default function Chat() {
           <div className="inline-block">
             <Link
               className="border-2 border-black rounded bg-[#49ACF3] px-2  text-white"
-              to={"/demoapp/chats"}
+              to={"/ChatApp/chats"}
             >
               Back
             </Link>

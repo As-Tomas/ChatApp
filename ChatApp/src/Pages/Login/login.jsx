@@ -11,10 +11,10 @@ export default function SignIn() {
     const demoUsername = "demo";
     const demoPassword = "password";
 
-    navigate("/demoapp/chats", { state: { username, password } });
+    navigate("/ChatApp/chats", { state: { username, password } });
     // if (username === demoUsername && password === demoPassword) {
     //   setLoggedIn(true);
-    //   navigate("/demoapp/chats", { state: { username, password } });
+    //   navigate("/ChatApp/chats", { state: { username, password } });
     // } else {
     //   console.log("Invalid username or password");
     // }
@@ -46,7 +46,7 @@ export default function SignIn() {
 
         <Link
           className="border-2 border-black rounded bg-[#49ACF3] w-2/3 px-2 mx-auto text-white"
-          to={"/demoapp/chats"}
+          to={"/ChatApp/chats"}
         >
           Create User
         </Link>
